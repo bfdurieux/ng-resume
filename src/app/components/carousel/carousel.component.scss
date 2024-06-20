@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.card {
+  height: 10rem;
+  width: 20rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  justify-content: flex-end;
+
+  &-upper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__description {
+      padding: .3rem 1rem;
+    }
+  }
+
+  &-lower {
+    flex: .5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+}

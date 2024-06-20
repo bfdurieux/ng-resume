@@ -1,0 +1,18 @@
+<div class="container">
+  @for (card of cards; track card) {
+    <div class="card">
+      <div class="card-upper">
+        <span>{{card.title}}</span>
+        <div class="card-upper__description">{{card.description}}</div>
+      </div>
+      <div class="card-lower">
+        @if (!Utils.isNullOrEmpty(card.hostingLink)) {
+          <app-anchor [href]="card.hostingLink ?? ''">Live Demo</app-anchor>
+        }
+        @if (!Utils.isNullOrEmpty(card.repoLink)) {
+          <app-anchor [href]="card.repoLink ?? ''">Github Repo</app-anchor>
+        }
+      </div>
+    </div>
+  }
+</div>

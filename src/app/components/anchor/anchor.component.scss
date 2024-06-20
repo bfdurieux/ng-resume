@@ -1,0 +1,10 @@
+.anchor {
+  padding: 1rem 2rem;
+  background-color: gray;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  &:hover {
+    background-color: darkblue;
+  }
+}
