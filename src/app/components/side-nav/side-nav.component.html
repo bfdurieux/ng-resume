@@ -1,7 +1,7 @@
 <div class="container">
   @if (!isOpen) {
     <div class="collapsed">
-      <button (click)="isOpen = !isOpen">open</button>
+      <app-icon (click)="isOpen = !isOpen" icon="plus"></app-icon>
       <div class="collapsed-links">
         <a href="">github</a>
         <a href="">linkedin</a>
