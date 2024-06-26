@@ -1,45 +1,31 @@
+$icon-size: 3.2rem;
+
 .container {
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  width: 3.5rem;
+  transition: width 200ms ease-in-out;
 }
 
-.nav-panel {
-  height: 100%;
+.expanded {
   width: 10rem;
+  transition: width 300ms ease-in-out;
+  background-color: white;
+  &-button, &-links {
+    align-self: flex-start;
+  }
+}
+
+.expand-button, .links-icon {
+  height: $icon-size;
+  width: $icon-size;
+}
+
+.options {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  &__button {
-    align-self: flex-start;
-  }
-
-  &__options {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__links {
-    height: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 2rem;
-  }
 }
 
-.collapsed {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  &-links {
-    height: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 2rem;
-  }
-}
