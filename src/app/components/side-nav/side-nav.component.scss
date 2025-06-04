@@ -7,12 +7,13 @@ $icon-size: 3.2rem;
   justify-content: space-between;
   width: 3.5rem;
   transition: width 200ms ease-in-out;
+  background-color: var(--accent-color);
 }
 
 .expanded {
   width: 10rem;
   transition: width 300ms ease-in-out;
-  background-color: white;
+  background-color: var(--accent-color);
   &-button, &-links {
     align-self: flex-start;
   }
@@ -21,6 +22,21 @@ $icon-size: 3.2rem;
 .expand-button, .links-icon {
   height: $icon-size;
   width: $icon-size;
+}
+
+.expand-button {
+  transition: transform ease 0.2s;
+  &:hover {
+    transform: translate(0, -2px);
+  }
+}
+
+.expanded-links-icon {
+  width: 100%;
+  display: flex;
+  &__text {
+    align-self: center;
+  }
 }
 
 .options {

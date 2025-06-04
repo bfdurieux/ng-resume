@@ -12,13 +12,18 @@ $size: 15rem;
   height: $size;
   width: $size;
   border-radius: 100%;
+  background-image: url("https://avatars.githubusercontent.com/u/51379834?v=4");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .info-panel {
-  background-color: white;
   height: $size;
   width: 25rem;
   border-radius: 10px;
   padding: 1rem;
-  text-wrap: normal;
+
+  display: flex;
+  align-items: center;
 }

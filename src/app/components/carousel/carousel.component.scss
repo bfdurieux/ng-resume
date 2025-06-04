@@ -8,10 +8,10 @@
 .card {
   height: 10rem;
   width: 20rem;
-  background-color: white;
+  background-color: var(--secondary-30);
   display: flex;
   flex-direction: column;
-  border-radius: 15px;
+  border-radius: 10px;
   justify-content: flex-end;
 
   &-upper {
@@ -19,7 +19,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    &__title {
+      margin: .5rem 0;
+      background-color: var(--accent-color);
+    }
     &__description {
       padding: .3rem 1rem;
     }

@@ -1,17 +1,17 @@
 .container {
   height: 100%;
   width: 100%;
-  background-color: gray;
+  background-color: var(--background-color);
   display: flex;
   flex-direction: column;
 }
 
 .upper-section {
   flex: 1;
-  background-color: salmon;
+  background-color: var(--background-color);
 }
 
 .lower-section {
   flex: 1;
-  background-color: teal;
+  background-color: var(--background-color);
 }

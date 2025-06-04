@@ -1,10 +1,14 @@
 .anchor {
-  padding: 1rem 2rem;
-  background-color: gray;
+  display: block;
+  padding: .5rem 1.5rem;
+  background-color: var(--secondary-30);
   border-radius: 5px;
   color: white;
   text-decoration: none;
+  transition: transform ease 0.2s;
+
   &:hover {
-    background-color: darkblue;
+    background-color: var(--secondary-20);
+    transform: translate(0, -3px);
   }
 }

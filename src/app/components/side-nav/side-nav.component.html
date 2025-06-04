@@ -12,11 +12,13 @@
   }
 
   <div class="links" [ngClass]="{'expanded-links': isOpen}">
-    <div class="links-icon">
-      <app-icon (click)="isOpen = !isOpen" icon="github" [isClickable]="true"></app-icon>
+    <div class="links-icon" [ngClass]="{'expanded-links-icon': isOpen}">
+      <app-icon icon="github" (click)="openLink(githubURL)" [isClickable]="true"></app-icon>
+      @if(isOpen) { <a class="expanded-links-icon__text" [href]="githubURL" target="_blank">GitHub</a> }
     </div>
-    <div class="links-icon">
-      <app-icon (click)="isOpen = !isOpen" icon="linkedin" [isClickable]="true"></app-icon>
+    <div class="links-icon" [ngClass]="{'expanded-links-icon': isOpen}">
+      <app-icon icon="linkedin" (click)="openLink(linkedinURL)" [isClickable]="true"></app-icon>
+      @if(isOpen) { <a class="expanded-links-icon__text" [href]="linkedinURL" target="_blank">LinkedIn</a> }
     </div>
   </div>
 </div>

@@ -25,4 +25,10 @@ const DEFAULT_DURATION = 300;
 })
 export class SideNavComponent {
   isOpen: boolean = false;
+  githubURL: string = "https://github.com/bfdurieux";
+  linkedinURL: string = "https://www.linkedin.com/in/bruno-durieux-266474190/";
+
+  openLink(url: string) {
+    window.open(url, '_blank');
+  }
 }
