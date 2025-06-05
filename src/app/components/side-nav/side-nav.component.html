@@ -4,10 +4,15 @@
   </div>
 
   @if(isOpen) {
+    @if(!isHome()) {<a class="options-link home" routerLink="">Home</a>}
     <div class="options">
-      <a href="">option</a>
-      <a href="">option</a>
-      <a href="">option</a>
+      <a class="options-link" href="assets/files/bruno-durieux.pdf" target="_blank" download="resume-bruno-durieux">
+        Download Resume
+      </a>
+<!--      navigate to a page with resume info-->
+      <a class="options-link" routerLink="view-resume">View Resume</a>
+<!--      open email-->
+      <a class="options-link" href="mailto:bfdurieux@gmail.com">Contact Me</a>
     </div>
   }
 

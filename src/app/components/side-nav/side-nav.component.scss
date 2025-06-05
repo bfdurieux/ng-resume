@@ -39,9 +39,18 @@ $icon-size: 3.2rem;
   }
 }
 
+.home {
+  align-self: center;
+}
+
 .options {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  &-link {
+    margin: .5rem 0;
+    color: var(--text-link-color);
+  }
 }
 
