@@ -27,6 +27,8 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/assets",
+              "src/assets/files",
+              "src/assets/icons",
               {
                 "glob": "**/*",
                 "input": "public"
