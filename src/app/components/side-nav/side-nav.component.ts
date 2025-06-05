@@ -31,6 +31,7 @@ export class SideNavComponent {
   isOpen: boolean = false;
   githubURL: string = "https://github.com/bfdurieux";
   linkedinURL: string = "https://www.linkedin.com/in/bruno-durieux-266474190/";
+  emailScript: string = "https://mail.google.com/mail/?view=cm&fs=1&to=bfdurieux@gmail.com";
   isHome: Signal<boolean>;
   route: Signal<any>;
 

@@ -1,5 +1,4 @@
 $size: 15rem;
-$icon-size: 3.2rem;
 
 .container {
   height: 100%;
@@ -10,8 +9,8 @@ $icon-size: 3.2rem;
 
 
 .icon {
-  height: $icon-size;
-  width: $icon-size;
+  height: var(--icon-size);
+  width: var(--icon-size);
 }
 
 .left-side {
@@ -31,8 +30,8 @@ $icon-size: 3.2rem;
     width: 100%;
     justify-content: space-evenly;
     & > * {
-      height: $icon-size;
-      width: $icon-size;
+      height: var(--icon-size);
+      width: var(--icon-size);
     }
   }
 

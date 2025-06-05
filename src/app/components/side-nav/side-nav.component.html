@@ -9,14 +9,15 @@
       <a class="options-link" href="assets/files/bruno-durieux.pdf" target="_blank" download="resume-bruno-durieux">
         Download Resume
       </a>
-<!--      navigate to a page with resume info-->
       <a class="options-link" routerLink="view-resume">View Resume</a>
-<!--      open email-->
-      <a class="options-link" href="mailto:bfdurieux@gmail.com">Contact Me</a>
     </div>
   }
 
   <div class="links" [ngClass]="{'expanded-links': isOpen}">
+    <div class="links-icon" [ngClass]="{'expanded-links-icon': isOpen}">
+      <app-icon icon="email" (click)="openLink(emailScript)" [isClickable]="true"></app-icon>
+      @if(isOpen) { <a class="expanded-links-icon__text" [href]="emailScript" target="_blank">Email</a> }
+    </div>
     <div class="links-icon" [ngClass]="{'expanded-links-icon': isOpen}">
       <app-icon icon="github" (click)="openLink(githubURL)" [isClickable]="true"></app-icon>
       @if(isOpen) { <a class="expanded-links-icon__text" [href]="githubURL" target="_blank">GitHub</a> }

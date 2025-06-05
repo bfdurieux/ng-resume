@@ -1,4 +1,3 @@
-$icon-size: 3.2rem;
 
 .container {
   height: 100%;
@@ -20,8 +19,9 @@ $icon-size: 3.2rem;
 }
 
 .expand-button, .links-icon {
-  height: $icon-size;
-  width: $icon-size;
+  margin-left: .2rem;
+  height: var(--icon-size);
+  width: var(--icon-size);
 }
 
 .expand-button {

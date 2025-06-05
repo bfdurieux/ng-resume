@@ -21,7 +21,7 @@
 
   &__title {
     background-color: var(--accent-color);
-    font-size: 1.5rem;
+    font-size: var(--title-size);
   }
 
   &__carousel {

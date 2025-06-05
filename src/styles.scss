@@ -18,4 +18,24 @@ html, body {
   --secondary-20: #1d188c33;
   --secondary-30: #1d188c4d;
   --text-link-color: #551a8b;
+  --icon-size: 3rem;
+  --title-size: 1.5rem;
 }
+
+
+
+:root[data-theme="light"] {
+  --text: #07271d;
+  --background: #f2fdf9;
+  --primary: #15795b;
+  --secondary: #7973e7;
+  --accent: #6b22bf;
+}
+:root[data-theme="dark"] {
+  --text: #d8f8ee;
+  --background: #020d09;
+  --primary: #86eacc;
+  --secondary: #1d188c;
+  --accent: #8a40dd;
+}
+
