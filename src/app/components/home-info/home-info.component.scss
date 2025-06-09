@@ -66,3 +66,20 @@ $size: 15rem;
     margin-bottom: 1.5rem;
   }
 }
+
+
+
+@media (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .info-panel {
+    max-width: 100%;
+
+    &__text {
+      text-align: center;
+      margin: 0 1rem;
+    }
+  }
+}
