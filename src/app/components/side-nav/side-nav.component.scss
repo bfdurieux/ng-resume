@@ -89,6 +89,10 @@
     &-links, &-links-icon {
       display: none;
     }
+    &-links-icon {
+      height: var(--icon-size);
+      width: var(--icon-size);
+    }
   }
 
 
@@ -109,5 +113,11 @@
   .links {
     display: flex;
     justify-content: flex-start;
+  }
+
+  .top-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 }

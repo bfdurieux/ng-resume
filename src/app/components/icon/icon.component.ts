@@ -17,14 +17,14 @@ export class IconComponent {
   @Input() strokeColor: string | null = null;
   @Input() isClickable: boolean = false;
   @Input() id: string = '0';
-  source: string = '';
 
   constructor(private http: HttpClient, private elementRef: ElementRef, private renderer: Renderer2) {}
 
   private loadIcon(icon: string): void {
-    const iconPath = `assets/icons/${icon}.svg`;
-    const existingIcon = document.getElementById(this.iconId)
+    if (icon == null || icon === '')
+      return;
 
+    const iconPath = `assets/icons/${icon}.svg`;
 
     this.http
       .get(iconPath, { responseType: 'text' })
@@ -43,10 +43,6 @@ export class IconComponent {
         })
       )
       .subscribe();
-
-    if (existingIcon != null)
-      existingIcon.remove();
-
   }
 
   private applyIconStyles(svgElement: HTMLElement): void {

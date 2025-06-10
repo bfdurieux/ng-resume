@@ -1,7 +1,11 @@
 <div class="container" [ngClass]="{'expanded': isOpen}">
   <div class="top-icons">
     <div class="expand-button" [ngClass]="{'expanded-button': isOpen}">
-      <app-icon (click)="isOpen = !isOpen" [icon]="!isOpen ? 'plus-square' : 'minus-square'" id="expand" [isClickable]="true"></app-icon>
+      @if(isOpen) {
+        <app-icon (click)="isOpen = !isOpen" icon="minus-square" id="expand" [isClickable]="true"></app-icon>
+      } @else {
+        <app-icon (click)="isOpen = !isOpen" icon="plus-square" id="expand" [isClickable]="true"></app-icon>
+      }
     </div>
     <div class="brush" [ngClass]="{'expanded-brush': isOpen}">
       <app-icon (click)="switchTheme()" iconColor="transparent" icon="brush" [isClickable]="true"></app-icon>
