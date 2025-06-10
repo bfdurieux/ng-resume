@@ -13,7 +13,7 @@
   width: 10rem;
   transition: width 300ms ease-in-out;
   background-color: var(--accent-color);
-  &-button, &-links {
+  &-button, &-links, &-brush {
     align-self: flex-start;
   }
 }
@@ -29,6 +29,17 @@
   &:hover {
     transform: translate(0, -2px);
   }
+}
+
+.top-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brush {
+  height: var(--icon-size);
+  width: var(--icon-size);
 }
 
 .expanded-links-icon {

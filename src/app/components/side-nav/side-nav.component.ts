@@ -34,6 +34,7 @@ export class SideNavComponent {
   emailScript: string = "https://mail.google.com/mail/?view=cm&fs=1&to=bfdurieux@gmail.com";
   isHome: Signal<boolean>;
   route: Signal<any>;
+  themes: string[] = ['light', 'dark', 'green-light', 'green-dark', 'blue-dark', 'blue-light', 'orange-light'];
 
   constructor(private router: Router) {
     this.route = toSignal(router.events.pipe(filter(event => event instanceof NavigationEnd)));
@@ -44,4 +45,11 @@ export class SideNavComponent {
     window.open(url, '_blank');
   }
 
+  switchTheme() {
+    const theme = document.documentElement.getAttribute('data-theme');
+    let index = this.themes.findIndex(t => t === theme);
+    index++;
+    index = this.themes.length === index ? 0 : index;
+    document.documentElement.setAttribute('data-theme', this.themes[index]);
+  }
 }

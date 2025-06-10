@@ -14,6 +14,7 @@ export class IconComponent {
     this.loadIcon(value);
   }
   @Input() iconColor: string = 'black';
+  @Input() strokeColor: string | null = null;
   @Input() isClickable: boolean = false;
   @Input() id: string = '0';
   source: string = '';
@@ -53,6 +54,8 @@ export class IconComponent {
     this.renderer.setStyle(svgElement, 'height', '90%');
     this.renderer.setStyle(svgElement, 'fill', this.iconColor);
     this.renderer.setAttribute(svgElement, 'id', this.iconId);
+    if (this.strokeColor != null)
+      this.renderer.setStyle(svgElement, 'stroke', this.strokeColor);
     if (this.isClickable)
       this.renderer.setStyle(svgElement, 'cursor', 'pointer');
   }
