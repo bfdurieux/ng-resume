@@ -5,6 +5,20 @@
   height: 100%;
 }
 
+.button-next, .button-prev {
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: transparent;
+  border: 0;
+  color: var(--arrow-button-color);
+}
+
+.button-prev:disabled, .button-next:disabled {
+  cursor: not-allowed;
+  color: rgba(129, 128, 128, 0.09);
+}
+
 .card {
   height: 10rem;
   width: 20rem;

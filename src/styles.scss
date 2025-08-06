@@ -27,6 +27,7 @@ html, body {
   --primary-color: #15795b;
   --secondary-color: #7973e7;
   --accent-color: #6b22bf;
+  --arrow-button-color: #000000;
 }
 
 :root[data-theme="dark"] {
@@ -35,6 +36,7 @@ html, body {
   --secondary-color: #1d188c;
   --accent-color: #8a40dd;
   --text-color: #d8f8ee;
+  --arrow-button-color: #FFFF;
 }
 
 :root[data-theme="blue-light"] {
@@ -43,6 +45,7 @@ html, body {
   --primary-color: #6495a8;
   --secondary-color: #9dbecb;
   --accent-color: #79a9bc;
+  --arrow-button-color: #000000;
 }
 
 :root[data-theme="green-light"] {
@@ -51,6 +54,7 @@ html, body {
   --primary-color: #8f9f6b;
   --secondary-color: #b1caac;
   --accent-color: #88b288;
+  --arrow-button-color: #000000;
 }
 :root[data-theme="green-dark"] {
   --text-color: #f6f5f3;
@@ -58,6 +62,7 @@ html, body {
   --primary-color: #8a8360;
   --secondary-color: #385138;
   --accent-color: #4b6c57;
+  --arrow-button-color: #FFFF;
 }
 
 :root[data-theme="blue-dark"] {
@@ -66,6 +71,7 @@ html, body {
   --primary-color: #a0afd3;
   --secondary-color: #314981;
   --accent-color: #4c70c7;
+  --arrow-button-color: #FFFF;
 }
 
 :root[data-theme="orange-light"] {
@@ -74,5 +80,6 @@ html, body {
   --primary-color: #db8a38;
   --secondary-color: #f4bf8a;
   --accent-color: #fba44c;
+  --arrow-button-color: #000000;
 }
 

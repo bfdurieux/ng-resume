@@ -1,5 +1,6 @@
 <div class="container">
-  @for (card of cards; track card) {
+  <button class="button-prev" [disabled]="position() -3 < 0" (click)="moveLeft()"> < </button>
+  @for (card of display(); track card) {
     <div class="card">
       <div class="card-upper">
         <span class="card-upper__title">{{card.title}}</span>
@@ -15,4 +16,5 @@
       </div>
     </div>
   }
+  <button class="button-next" [disabled]="position() + 3 >= cards().length" (click)="moveRight()"> > </button>
 </div>
